@@ -1,0 +1,145 @@
+:root {
+  --black: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(214, 33%, 21%);
+}
+body {
+  font-family: "Overpass";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--black);
+}
+.container {
+  border-radius: 20px;
+  position: absolute;
+  top: 130px;
+  left: 35%;
+  color: var(--white);
+  overflow: hidden;
+  background: linear-gradient(var(--darkBlue), var(--black));
+  width: 330px;
+  height: 330px;
+  padding: 20px;
+}
+
+.rounded {
+  background-color: var(--darkBlue);
+  border: none;
+  border-radius: 50%;
+  margin: 10px 20px 10px 0;
+  padding: 16px 18px;
+  color: var(--mediumGrey);
+}
+.rounded2 {
+  background-color: var(--darkBlue);
+  border: none;
+  border-radius: 50%;
+  margin: 10px 20px 10px 0;
+  padding: 10px 12px;
+}
+.star {
+  margin: 0;
+  padding: 1px;
+  font-size: 20px;
+  line-height: 50%;
+  color: var(--orange);
+}
+.submit {
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 40px;
+  margin-left: 10px;
+  background-color: var(--orange);
+  color: var(--white);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.buttons {
+  text-align: center;
+}
+p {
+  font-family: "Overpass";
+}
+h2 {
+  font-family: "Overpass";
+}
+
+.modalContainer {
+  border-radius: 20px;
+  position: absolute;
+  top: 130px;
+  left: 35%;
+  color: var(--white);
+  overflow: hidden;
+  background: linear-gradient(var(--darkBlue), var(--black));
+  width: 300px;
+  height: 330px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+h3 {
+  color: var(--white);
+  font-size: 25px;
+}
+img {
+  width: 150px;
+}
+.modalContent {
+  color: var(--grey);
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+.modalMessage {
+  width: 200px;
+  height: 30px;
+  background-color: rgba(70, 71, 113, 0.735);
+  margin: 5px 15px 5px 15px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: var(--orange);
+  letter-spacing: 2px;
+}
+
+@media (max-width: 360px) {
+  .modalContainer {
+    left: 6%;
+    padding: 10px;
+    width: 290px;
+    height: 290px;
+  }
+  .container {
+    left: 6%;
+    padding: 10px;
+    width: 290px;
+    height: 290px;
+    flex-wrap: nowrap;
+  }
+  .rounded {
+    margin: 10px;
+    padding: 13px 14px;
+  }
+  .submit {
+    margin: 5px 5px 5px 0;
+    border-radius: 40px;
+    background-color: var(--orange);
+    color: var(--white);
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+  h2 {
+    margin: 2px 2px;
+  }
+  p {
+    font-size: 12px;
+  }
+} ;
