@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Font from "./Font";
 
 //catching value of pressed button and passing to parent
 const Content = (props) => {
+  const [modalShow, setModalShow] = useState(null);
   const valueHandler = (e) => {
     e.preventDefault();
+    setModalShow(e.target.value);
     props.changeValue(e.target.value);
   };
 
   //Submit handler - showing modal message
   const submitHandler = (e) => {
     e.preventDefault();
-    props.modalHandler(true);
+    if (modalShow === null) return null;
+    else {
+      return props.modalHandler(true);
+    }
   };
   return (
     <div className="container">

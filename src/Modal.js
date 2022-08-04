@@ -5,9 +5,7 @@ const Modal = (props) => {
     <div className="modalContainer">
       <img src={ReactLogo} alt="thank you" />
       <button className="modalMessage">
-        {props.messageValue
-          ? `You selected ${props.messageValue} out 5`
-          : alert("Please rate our job")}
+        You selected {props.messageValue} out 5
       </button>
       <h3>Thank you!</h3>
       <div className="modalContent">
